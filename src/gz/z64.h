@@ -992,6 +992,9 @@ struct z64_actor_s
   void             *draw_proc;                /* 0x0134 */
   void             *code_entry;               /* 0x0138 */
                                               /* 0x013C */
+#if Z64_VERSION==Z64_OOTMQDBGP
+  char              dbg_pad[0x10]             /* 0x013C */
+#endif
 };
 
 typedef struct
