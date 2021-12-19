@@ -124,6 +124,17 @@ rom_table =
                     gz_name     = "gz-oot-ce-j" .. version_suffix,
                     title_id    = "NGEJ",
                   },
+  [0x5DCE4F62]  = {
+                    game        = "oot",
+                    version     = "mq-dbg",
+                    region      = "p",
+                    code_ind    = 28,
+                    code_ram    = 0x8001CE60,
+                    data_dir    = "oot-mq-dbg-p",
+                    gz_version  = "oot-mq-dbg-p" .. version_suffix,
+                    gz_name     = "gz-oot-mq-dbg-p" .. version_suffix,
+                    title_id    = "NGQP",
+                  },
 }
 
 vc_table =

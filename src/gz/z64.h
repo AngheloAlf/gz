@@ -993,7 +993,7 @@ struct z64_actor_s
   void             *code_entry;               /* 0x0138 */
                                               /* 0x013C */
 #if Z64_VERSION==Z64_OOTMQDBGP
-  char              dbg_pad[0x10]             /* 0x013C */
+  char              dbg_pad[0x10];             /* 0x013C */
 #endif
 };
 
