@@ -1481,8 +1481,14 @@ void load_state(const struct state_meta *state)
       }
     }
     if (z64_file.language == 0) {
+      // TODO
+      #if Z64_VERSION != Z64_OOTMQDBGP
       zu_getfile_idx(z64_icon_item_jpn_static,
                      z64_game.pause_ctxt.icon_item_lang);
+      #else
+      zu_getfile_idx(z64_icon_item_nes_static,
+                     z64_game.pause_ctxt.icon_item_lang);
+      #endif
     }
     else {
       zu_getfile_idx(z64_icon_item_nes_static,
